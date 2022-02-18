@@ -20,8 +20,12 @@ namespace Aula_Presencial_Rech.ConsoleApp
 
                 int N;
                 N = Convert.ToInt32(Console.ReadLine());
+                if (N == 0)
+                {
+                    break;
+                }
 
-                if (N > 1000 || N < 1)
+                if (N > 1000 || N < 0)
                 {
                     Console.WriteLine("Seu N é inválido");
                 }
@@ -42,6 +46,8 @@ namespace Aula_Presencial_Rech.ConsoleApp
                 {
                     Console.WriteLine("N é diferente da quantidade de comandos");
                 }
+
+                
 
                     for (int i = 0; i < ordens.Length; i++)
                 {
